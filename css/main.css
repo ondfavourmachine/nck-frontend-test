@@ -347,7 +347,7 @@ form button {
     position: absolute;
     width: 92%;
     z-index: 10;
-    transform: translateX(-350px);
+    transform: translateX(-400px);
     height: 100%;
     background-color: var(--primary-color);
     transition: all 0.9s ease-in-out;
