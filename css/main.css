@@ -78,7 +78,7 @@ div.top-bar-inner {
 .top-bar-inner__second span img {
   height: 16px;
   object-fit: cover;
-  padding: 8px 1px;
+  padding: 8px 3px;
   background: rgb(229, 229, 229, 0.5);
   vertical-align: middle;
 }
@@ -333,7 +333,7 @@ form button {
     position: absolute;
     display: block;
     top: 20px;
-    left: 83%;
+    left: 87%;
   }
   div.harmbuger div {
     width: 26px;
@@ -342,15 +342,15 @@ form button {
     background: var(--primary-color);
   }
   .mobile-nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 92%;
     z-index: 10;
-    transform: translateX(-300px);
+    transform: translateX(-350px);
     height: 100%;
     background-color: var(--primary-color);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
   }
 
   .close {
@@ -392,9 +392,8 @@ form button {
   }
 
   .mobile-nav.show {
-    display: flex;
     transform: translateX(0px);
-    transition: transform 0.6s ease-in-out;
+    /* transition: transform 0.6s ease-in-out; */
   }
 
   .links li a {
@@ -426,6 +425,7 @@ form button {
   nav {
     display: none;
   }
+
   .container-house {
     width: 100vw;
   }
