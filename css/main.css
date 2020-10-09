@@ -312,11 +312,97 @@ form button {
 }
 
 @media only screen and (max-width: 850px) {
+  main {
+    width: 100vw;
+  }
   .first-section {
     height: 75vh;
   }
 
   main {
     width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav {
+    display: none;
+  }
+  .container-house {
+    width: 100vw;
+  }
+  .first-section {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .second-bar {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 250px 550px;
+    grid-gap: 5px;
+    margin-top: 48px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .credit-card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .credit-card .card-img__holder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .credit-card span img {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+  }
+
+  form {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+  }
+
+  .input-group {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0 0px 3px !important;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .input-group label {
+    margin-bottom: 0 !important;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .second-section {
+    margin-top: 6rem;
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .third-section {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+
+  .third-section button {
+    width: 70%;
   }
 }
