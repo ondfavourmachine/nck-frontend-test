@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main class="container-house">
+    <main class="container-house" style="position: relative;">
       <nav>
         <ul>
           <li><a href=""> Trips</a></li>
@@ -27,6 +27,24 @@
           </li>
         </ul>
       </nav>
+
+      <div class="harmbuger" id="harmbuger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav">
+        <span class="close"><a> + </a></span>
+        <ul class="links">
+          <li><a href=""> Trips</a></li>
+          <li><a href=""> Recently viewed</a></li>
+          <li><a href=""> Bookings</a></li>
+          <li>
+            <a href=""> <img src="css/images/logo-to-check.PNG" alt=""/></a>
+          </li>
+        </ul>
+      </div>
       <section class="first-section">
         <div class="top-bar">
           <div class="top-bar-inner">
@@ -93,7 +111,7 @@
 
             <div class="form-group footer">
               <div class="input-group">
-                <label class="container"
+                <label class="container foreign"
                   >Use this card for next time purchase
                   <input type="radio" checked="checked" name="radio" />
                   <span class="checkmark"></span>
@@ -124,5 +142,18 @@
         <p>Total: &#x20A6;2556.64</p>
       </section>
     </main>
+
+    <script>
+      let hamburger = document.getElementById("harmbuger");
+      let mobileNav = document.getElementById("mobile-nav");
+      let close = document.querySelector(".close");
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("show");
+      });
+
+      close.addEventListener("click", () => {
+        mobileNav.classList.remove("show");
+      });
+    </script>
   </body>
 </html>
