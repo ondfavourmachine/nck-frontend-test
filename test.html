@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test done</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="container-house">
+      <nav>
+        <ul>
+          <li><a href=""> Trips</a></li>
+          <li><a href=""> Recently viewed</a></li>
+          <li><a href=""> Bookings</a></li>
+          <li>
+            <a href=""> <img src="css/images/logo-to-check.PNG" alt=""/></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="first-section">
+        <div class="top-bar">
+          <div class="top-bar-inner">
+            <p class="top-bar-inner__first">
+              <span>Payment Information</span>
+            </p>
+
+            <p class="top-bar-inner__second">
+              <span
+                ><img
+                  style="object-fit: cover; background: #0e4595"
+                  src="css/images/Visa_Inc._logo.svg"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  style="object-fit: cover;"
+                  src="css/images/DiscoverCard.svg"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  style="object-fit: cover; background: transparent"
+                  src="css/images/paypal-seeklogo.com.svg"
+                  alt=""
+              /></span>
+            </p>
+          </div>
+          <span> Choose your method of payment</span>
+        </div>
+        <div class="second-bar">
+          <div class="credit-card">
+            <span class="card-img__holder">
+              <img src="css/images/card (1).svg" alt="" />
+            </span>
+          </div>
+          <form class="form">
+            <div class="form-group">
+              <div class="input-group">
+                <label for="credit-card-input"> Credit card number</label>
+                <input
+                  type="text"
+                  id="credit-card-input"
+                  placeholder="4324 5433 9382 1030"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="expiry-date"> Expiration date</label>
+                <input type="text" id="expiry-date" placeholder="03/24" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <label for="security-code"> Security code</label>
+                <input type="text" id="security-code" placeholder="420" />
+              </div>
+              <div class="input-group">
+                <label for="postal-code"> Postal Code</label>
+                <input type="text" id="postal-code" placeholder="10119" />
+              </div>
+            </div>
+
+            <div class="form-group footer">
+              <div class="input-group">
+                <label class="container"
+                  >Use this card for next time purchase
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit">Add card</button>
+          </form>
+        </div>
+      </section>
+      <section class="second-section">
+        <p class="first-p">
+          <span>Subtotal</span><span>&#x20A6;2,497.00</span>
+        </p>
+
+        <p class="second-p">
+          <span>Estimated Tax</span><span>&#x20A6;119.64</span>
+        </p>
+
+        <p class="third-p">
+          <span>Promotion Code <span class="muted">Z4KXLM9A</span> </span
+          ><span>&#x20A6;-60.00</span>
+        </p>
+      </section>
+      <section class="third-section">
+        <button>Complete payment</button>
+        <p>Total: &#x20A6;2556.64</p>
+      </section>
+    </main>
+  </body>
+</html>
